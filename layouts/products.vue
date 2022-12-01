@@ -1,8 +1,8 @@
 <template>
     <div>
-      <header>
-        <nav>
-          <NuxtLink to="/">Lufy Shop</NuxtLink>
+      <header class="shadow-sm bg-white">
+        <nav class="container mx-auto p-4">
+          <NuxtLink to="/products" class="font-bold">Lufy Shop</NuxtLink>
         </nav>
       </header>
 
@@ -11,8 +11,8 @@
         <slot/>
       </div>
 
-      <footer>
-        <ul>
+      <footer class="container mx-auto p-4 flex justify-between border-t-2">
+        <ul class="flex gap-4">
             <li><NuxtLink to="/">Home</NuxtLink></li>
             <li><NuxtLink to="/about">About</NuxtLink></li>
             <li><NuxtLink to="/products">Products</NuxtLink></li>
